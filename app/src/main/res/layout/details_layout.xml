@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TextView android:id="@+id/textView_msg" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#0099CC"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+    <EditText
+        android:id="@+id/note"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:hint="Note"
+        android:inputType="textAutoComplete" />
+
+    <ToggleButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Done"
+        android:id="@+id/done"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.07"
+        android:checked="false" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Days"
+        android:ems="10"
+        android:id="@+id/number"
+        android:layout_weight="0.09" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:hint="Remarks"
+        android:id="@+id/remarks"
+        android:layout_weight="0.14" />
+
+    <Button
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/button"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.08" />
+
+
+</LinearLayout>
